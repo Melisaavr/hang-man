@@ -10,3 +10,5 @@ Link to hang-man https://hangmann-461bf35a6e08.herokuapp.com/
 4. You have a limited number of incorrect guesses before you lose the game.
 5. Try to guess the word before you run out of guesses!
 6. Good luck and have fun!
+
+## USER STORIES
