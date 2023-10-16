@@ -19,26 +19,29 @@ from words import words
 import string
 
 
-# Function to choose a random word from the list
-def choose_word():
-    return random.choice(words)
+def get_valid_word(words):
+    word = random.choice(words) #randomly chooses something from the list
+
 
 def hangman():
-    word = words
-    word_letters = set(word) #letters in the word
+    word= get_valid_word(words)
+    word_letters = set(word) # letters in the word
     alphabet = set(string.ascii_uppercase)
     used_letters = set() # what the user has guessed
 
+    # getting user input
+    user_letter = input('Guess a letter: ').upper()
+    if user_letter in alphabet - used_letters:
+        used_letters.add(user_letter)
+    if user_letter in word_letters:
+        word_letters.remove(user_letter)
 
-# Function to display the word with guessed letters
-def display_word(word, guessed_letters):
-    display = ""
-    for letter in word:
-        if letter in guessed_letters:
-            display += letter
-        else:
-            display += "_"
-    return display
+    elif user_letter in used_letters:
+        print('You have already used that character. Please try again!')
+    else:
+        print('Invalid character. Please try again!')
 
-user_input = input('Type something:')
+
+user_input = input('Type something')
 print(user_input)
+
