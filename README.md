@@ -18,6 +18,8 @@ As a first time user, I want to cover the rules so I am aware of how many times 
 As a frequent visitor, I want to be able to challenge myself with new words to guess. 
 
 ## FEATURES
+Welcome and How to play: 
+![Alt text](<images/features 11.png>)
 The game starts by prompting you that you have 7 lives, which is exciting since you do not know what will come your way. It shows you how many letters are in the word and allows you to make your first guess
 ![Alt text](<images/features 1.png>)
 There is a timer going on and it times how long it takes for the user to finish the game. There is a feature to warn the user if the letter they have picked is right/wrong and how many lives they have left. You can also see the hangman forming everytime the user gets a letter wrong. 
