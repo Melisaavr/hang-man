@@ -64,3 +64,14 @@ def hangman():
 
         else:
             print('\nThat is not a valid letter.')
+            
+# gets here when len(word_letters) == 0 OR when lives == 0
+    if lives == 0:
+        print(lives_visual_dict[lives])
+        print('You died, sorry. The word was', word)
+    else:
+        print('YAY! You guessed the word', word, '!!')
+
+
+if __name__ == '__main__':
+    hangman()
