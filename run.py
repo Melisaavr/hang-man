@@ -13,3 +13,6 @@ print("3. You can only guess letters (no numbers or special characters).")
 print("4. You have a limited number of incorrect guesses before you lose the game.")
 print("5. Try to guess the word before you run out of guesses!")
 print("6. Good luck and have fun!\n")
+
+import random 
+from words import words
