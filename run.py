@@ -1,6 +1,9 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
+import random
+from words import words
+from hangman_visual import lives_visual_dict
+import string
+import time
+
 # Welcome Message
 print("Welcome to Hangman!")
 print("Let's see if you can guess the word.")
@@ -15,11 +18,11 @@ print("5. Try to guess the word before you run out of guesses!")
 print("6. Good luck and have fun!\n")
 
 
-import random
-from words import words
-from hangman_visual import lives_visual_dict
-import string
-import time
+def print_rules():
+    print(
+        f """"
+    )
+    
 
 
 def get_valid_word(words):
@@ -82,6 +85,8 @@ def hangman():
 
 
 def main():
+    print_rules()
     hangman()
+
 if __name__ == '__main__':
     main()

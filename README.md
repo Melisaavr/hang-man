@@ -1,6 +1,7 @@
 # HANG-MAN
 Hang-man is a word-guessing game with a timer to track your progress and how long it will take for you to win or lose. 
 It is very straightforward and easy to play. It allows you to visually see how far you have come whether its a win and the letters are displayed, or, the hang-man is visually developed as you guess the wrong letters. 
+Link to hang-man https://hangmann-461bf35a6e08.herokuapp.com/
 
 ## HOW TO PLAY
 1. The computer will choose a secret word.
