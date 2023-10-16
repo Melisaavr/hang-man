@@ -81,5 +81,7 @@ def hangman():
         print('YAY! You guessed the word', word, '!!')
 
 
-if __name__ == '__main__':
+def main():
     hangman()
+if __name__ == '__main__':
+    main()
