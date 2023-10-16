@@ -16,10 +16,19 @@ print("6. Good luck and have fun!\n")
 
 import random 
 from words import words
+import string
+
 
 # Function to choose a random word from the list
 def choose_word():
     return random.choice(words)
+
+def hangman():
+    word = words
+    word_letters = set(word) #letters in the word
+    alphabet = set(string.ascii_uppercase)
+    used_letters = set() # what the user has guessed
+
 
 # Function to display the word with guessed letters
 def display_word(word, guessed_letters):
@@ -30,3 +39,6 @@ def display_word(word, guessed_letters):
         else:
             display += "_"
     return display
+
+user_input = input('Type something:')
+print(user_input)
