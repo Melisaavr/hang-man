@@ -26,3 +26,9 @@ When the user wins, there is a text telling them so. They then can choose if the
 ![Alt text](<images/features 3.png>)
 The user is notified that they have no more lives left and the hangman is fully formed to support the text. They can again choose to play or quit the next round. 
 ![Alt text](<images/features 4.png>)
+
+## FLOWCHART
+The flowchart represents the logic that has been followed: 
+![Alt text](images/flowchart.png)
+
+

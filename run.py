@@ -25,11 +25,7 @@ def menu():
     input("Press enter to start the game")
     hangman()
 
-
-def print_rules():
-    print
-        
-    
+  
 def get_valid_word(words):
     """ randomly chooses something from the list """
     word = random.choice(words)  
