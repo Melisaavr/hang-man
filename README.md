@@ -18,3 +18,5 @@ As a first time user, I want to cover the rules so I am aware of how many times 
 As a frequent visitor, I want to be able to challenge myself with new words to guess. 
 
 ## FEATURES
+The game starts by prompting you that you have 7 lives, which is exciting since you do not know what will come your way. 
+![Alt text](<images/features 1.png>)
