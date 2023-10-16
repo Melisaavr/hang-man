@@ -16,3 +16,17 @@ print("6. Good luck and have fun!\n")
 
 import random 
 from words import words
+
+# Function to choose a random word from the list
+def choose_word():
+    return random.choice(words)
+
+# Function to display the word with guessed letters
+def display_word(word, guessed_letters):
+    display = ""
+    for letter in word:
+        if letter in guessed_letters:
+            display += letter
+        else:
+            display += "_"
+    return display
