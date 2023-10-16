@@ -4,10 +4,6 @@ from hangman_visual import lives_visual_dict
 import string
 import time
 
-def menu():
-    input("Press enter to start the game")
-    hangman()
-
 """ Welcome Message """
 def print_rules():
     print(
@@ -22,8 +18,12 @@ How to Play
 4. You have a limited number of incorrect guesses before you lose the game.
 5. Try to guess the word before you run out of guesses!
 6. Good luck and have fun!
-"""
-)
+""" )
+
+
+def menu():
+    input("Press enter to start the game")
+    hangman()
 
 
 def print_rules():
@@ -51,7 +51,7 @@ def hangman():
     start_time = time.time()  
     
 
-    # getting user input
+    """ getting user input """
     while len(word_letters) > 0 and lives > 0:
         """letters used """
         """ ' '.join(['a', 'b', 'cd']) --> 'a b cd' """

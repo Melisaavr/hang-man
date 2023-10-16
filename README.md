@@ -12,3 +12,9 @@ Link to hang-man https://hangmann-461bf35a6e08.herokuapp.com/
 6. Good luck and have fun!
 
 ## USER STORIES
+As a first time user, I want to understand the game so I can begin guessing straight away. 
+As a first time user, I want to cover the rules so I am aware of how many times I can try before I lose. 
+
+As a frequent visitor, I want to be able to challenge myself with new words to guess. 
+
+## FEATURES
