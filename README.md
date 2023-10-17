@@ -47,4 +47,5 @@ VSCode was used as the main tool to write and edit code.
 GitHub was used to host the code of the website.
 
 ## Bugs
-
+The lines were too long so I have made sure they were shorter than 79. However, the blank lines were unresolved.
+![Alt text](<images/CI VALIDATOR.png>)
