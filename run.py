@@ -4,6 +4,7 @@ from hangman_visual import lives_visual_dict
 import string
 import time
 
+
 """ Welcome Message """
 def print_rules():
     print(
@@ -51,14 +52,17 @@ def hangman():
     while len(word_letters) > 0 and lives > 0:
         """letters used """
         """ ' '.join(['a', 'b', 'cd']) --> 'a b cd' """
-        print('You have', lives, 'lives left and you have used these letters: ', ' '.join(used_letters))
+        print('You have', lives, 
+              'lives left and you have used these letters: '
+              , ' '.join(used_letters))
 
     
         elapsed_time = int(time.time() - start_time)
         print(f'Time elapsed: {elapsed_time} seconds')
         
 
-        word_list = [letter if letter in used_letters else '-' for letter in word]
+        word_list = [letter if letter in used_letters 
+                     else '-' for letter in word]
         print(lives_visual_dict[lives])
         print('Current word: ', ' '.join(word_list))
 
@@ -74,7 +78,7 @@ def hangman():
                 print('\nYour letter,', user_letter, 'is not in the word.')
 
         elif user_letter in used_letters:
-            print('\nYou have already used that letter. Guess another letter.')
+            print('\nYou have already used that letter. Guess another.')
 
         else:
             print('\nThat is not a valid letter.')

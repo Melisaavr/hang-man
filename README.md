@@ -33,4 +33,18 @@ The user is notified that they have no more lives left and the hangman is fully 
 The flowchart represents the logic that has been followed: 
 ![Alt text](images/flowchart.png)
 
+## TECHNOLOGIES USED
+### Languages
+Python 3.8.5: used to anchor the project and direct all application behavior
+
+### Built in Packages
+random  -  Python Random module is an in-built module of Python that is used to generate random numbers in Python. These are pseudo-random numbers means they are not truly random. This module can be used to perform random actions such as generating random numbers, printing random a value for a list or string, etc.
+string - The built-in string class provides the ability to do complex variable substitutions and value formatting
+time - the time module is another built-in way to get the current time in Python. 
+
+### Other Tools
+VSCode was used as the main tool to write and edit code.
+GitHub was used to host the code of the website.
+
+## Bugs
 
