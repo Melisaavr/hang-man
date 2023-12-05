@@ -92,15 +92,21 @@ def hangman():
 
 
 def play_again():
-    choice = input("Do you want to play again? (yes/no): ").lower()
-    return choice == 'yes'
+    while True:
+        choice = input("Do you want to play again? (yes/no): ").lower()
+        if choice in ['yes', 'no']:
+            return choice == 'yes'
+        else:
+            print("Invalid input. Please try again.")
 
 def main():
     print_rules()
     while True:
         hangman()
         if not play_again():
+            print("Thank you for playing. See you next time!")
             break
+
 
 if __name__ == '__main__':
     main()
