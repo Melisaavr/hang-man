@@ -12,8 +12,8 @@ Link to hang-man https://hangmann-461bf35a6e08.herokuapp.com/
 6. Good luck and have fun!
 
 ## USER STORIES
-As a first time user, I want to understand the game so I can begin guessing straight away. 
-As a first time user, I want to cover the rules so I am aware of how many times I can try before I lose. 
+- As a first time user, I want to understand the game so I can begin guessing straight away. 
+- As a first time user, I want to cover the rules so I am aware of how many times I can try before I lose. 
 
 As a frequent visitor, I want to be able to challenge myself with new words to guess. 
 
@@ -38,17 +38,26 @@ The flowchart represents the logic that has been followed:
 Python 3.8.5: used to anchor the project and direct all application behavior
 
 ### Built in Packages
-random  -  Python Random module is an in-built module of Python that is used to generate random numbers in Python. These are pseudo-random numbers means they are not truly random. This module can be used to perform random actions such as generating random numbers, printing random a value for a list or string, etc.
-string - The built-in string class provides the ability to do complex variable substitutions and value formatting
-time - the time module is another built-in way to get the current time in Python. 
+- random  -  Python Random module is an in-built module of Python that is used to generate random numbers in Python. These are pseudo-random numbers means they are not truly random. This module can be used to perform random actions such as generating random numbers, printing random a value for a list or string, etc.
+- string - The built-in string class provides the ability to do complex variable substitutions and value formatting
+- time - the time module is another built-in way to get the current time in Python. 
 
 ### Other Tools
-VSCode was used as the main tool to write and edit code.
-GitHub was used to host the code of the website.
-
+- VSCode was used as the main tool to write and edit code.
+- GitHub was used to host the code of the website.
+- Heroku used to deploy the code.
 ## Bugs
-The lines were too long so I have made sure they were shorter than 79. However, the blank lines were unresolved.
+- ***Bug:*** The lines were too long so I have made sure they were shorter than 79. 
+-***Fix:*** I have resolved the lines being too long and fixed the blank lines too. 
 ![Alt text](images/ci_validator.png)
+- ***Bug:*** Previously, the game did not handle non-alphabetical characters properly. If a user inputted a number or special character, it would prompt them to guess another letter but did not remove the invalid character from the input buffer, causing potential confusion.
+- ***Fix:*** Added validation to reject non-alphabetical characters and prompt the user to enter a valid letter without counting it as an attempt.
+- ***Bug:*** The timer displaying the elapsed time was not paused when the game was waiting for user input, potentially leading to inaccurate elapsed time display.
+- ***Fix:*** Adjusted the timer to only track active gameplay time, pausing when waiting for user input to ensure accurate elapsed time display.
+
+### Mistakes: 
+- I am aware that I was making a mistake with my commit messages so for my resubmission I have tried my best to use the correct form of commit messages. 
+
 
 ## Deployment
 The program was deployed to Heroku.
