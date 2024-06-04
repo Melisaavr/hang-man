@@ -48,7 +48,7 @@ GitHub was used to host the code of the website.
 
 ## Bugs
 The lines were too long so I have made sure they were shorter than 79. However, the blank lines were unresolved.
-![Alt text](<images/CI VALIDATOR.png>)
+![Alt text](images/CI_VALIDATOR.png)
 
 ## Deployment
 The program was deployed to Heroku.
@@ -72,25 +72,25 @@ Create a Heroku account if you don't already have one here Heroku.
 Create a new Heroku application on the following page here New Heroku App:
 
 Create a new Heroku application
-![Alt text](<images/heroku 1.png>)
+![Alt text](images/heroku_1.png)
 
 Go to the Deploy tab:
-![Alt text](<images/heroku 2.png>)
+![Alt text](images/heroku_2.png)
 
 Link your GitHub account and connect the application to the repository you created.
-![Alt text](<images/heroku 3.png>)
+![Alt text](images/heroku_3.png)
 
 Go to the Settings tab:
-![Alt text](<images/heroku 4.png>)
+![Alt text](images/heroku_4.png)
 
 Click "Add buildpack":
-![Alt text](<images/heroku 5.png>)
+![Alt text](images/heroku_5.png)
 
 Add the Python and Node.js buildpacks in the following order:
-![Alt text](<images/heroku 6.png>)
+![Alt text](images/heroku_6.png)
 
 Click "Reveal Config Vars."
-![Alt text](<images/heroku 7.png>)
+![Alt text](images/heroku_7.png)
 
 Add 1 new Config Vars:
 
@@ -98,16 +98,16 @@ Key: PORT Value: 8000
 This Config was provided by CODE INSTITUTE.
 
 Go back to the Deploy tab:
-![Alt text](<images/heroku 8.png>)
+![Alt text](images/heroku_8.png)
 
 Click "Deploy Branch":
-![Alt text](<images/heroku 9.png>)
+![Alt text](images/heroku_9.png)
 
 Wait for the completion of the deployment.
-![Alt text](<images/heroku 10.png>)
+![Alt text](images/heroku_10.png)
 
 Click "Open app" to launch the application inside a web page.
-![Alt text](<images/heroku 11.png>)
+![Alt text](images/heroku_11.png)
 
 
 ## Credits
