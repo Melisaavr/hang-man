@@ -27,7 +27,7 @@ The game starts by prompting you that you have 7 lives, which is exciting since 
 - When the user wins, there is a text telling them so. They then can choose if they want to play again or quit by answering yes or no. 
 ![Alt text](images/features_3.png)
 - The user is notified that they have no more lives left and the hangman is fully formed to support the text. They can again choose to play or quit the next round. 
-![Alt text](images/features 4.png)
+![Alt text](images/features_4.png)
 
 ## FLOWCHART
 The flowchart represents the logic that has been followed: 
