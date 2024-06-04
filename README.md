@@ -48,7 +48,7 @@ Python 3.8.5: used to anchor the project and direct all application behavior
 - Heroku used to deploy the code.
 ## Bugs
 - ***Bug:*** The lines were too long so I have made sure they were shorter than 79. 
--***Fix:*** I have resolved the lines being too long and fixed the blank lines too. 
+- ***Fix:*** I have resolved the lines being too long and fixed the blank lines too. 
 ![Alt text](images/ci_validator.png)
 - ***Bug:*** Previously, the game did not handle non-alphabetical characters properly. If a user inputted a number or special character, it would prompt them to guess another letter but did not remove the invalid character from the input buffer, causing potential confusion.
 - ***Fix:*** Added validation to reject non-alphabetical characters and prompt the user to enter a valid letter without counting it as an attempt.
@@ -118,6 +118,10 @@ Wait for the completion of the deployment.
 Click "Open app" to launch the application inside a web page.
 ![Alt text](images/heroku_11.png)
 
+
+## Testing
+- CI PYTHON LINTER: 
+![Alt text](images/python_testing.PNG)
 
 ## Credits
 How to add a timer on Python https://www.youtube.com/watch?v=KseiSR0MCTI&ab_channel=BroCode
