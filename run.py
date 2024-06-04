@@ -5,10 +5,9 @@ import string
 import time
 
 
-""" Welcome Message """
 def print_rules():
-    print(
-f""""
+    """ Welcome Message """
+    print(f"""
 Welcome to Hangman!
 Let's see if you can guess the word.
 
@@ -19,17 +18,18 @@ How to Play
 4. You have a limited number of incorrect guesses before you lose the game.
 5. Try to guess the word before you run out of guesses!
 6. Good luck and have fun!
-""" )
+""")
 
 
 def menu():
+    """!"""
     input("Press enter to start the game")
     hangman()
 
-  
+
 def get_valid_word(words):
     """ randomly chooses something from the list """
-    word = random.choice(words)  
+    word = random.choice(words)
     while '-' in word or ' ' in word:
         word = random.choice(words)
 
@@ -37,31 +37,32 @@ def get_valid_word(words):
 
 
 def hangman():
+    """!"""
     word = get_valid_word(words)
-    """ letters in the word """
-    word_letters = set(word)  
+    # letters in the word
+    word_letters = set(word)
     alphabet = set(string.ascii_uppercase)
-    used_letters = set()  
+    used_letters = set()
 
     lives = 7
-    """ Add a timer, starting from the beginning of the game """
-    start_time = time.time()  
-    
+    #  Add a timer, starting from the beginning of the game
+    start_time = time.time()
 
-    """ getting user input """
+    # getting user input
     while len(word_letters) > 0 and lives > 0:
-        """letters used """
-        """ ' '.join(['a', 'b', 'cd']) --> 'a b cd' """
-        print('You have', lives, 
-              'lives left and you have used these letters: '
-              , ' '.join(used_letters))
+        #  letters used """
+        #  ' '.join(['a', 'b', 'cd']) --> 'a b cd' """
+        print(
+            'You have',
+            lives,
+            'lives left and you have used these letters: ',
+            ' '.join(used_letters)
+        )
 
-    
         elapsed_time = int(time.time() - start_time)
         print(f'Time elapsed: {elapsed_time} seconds')
-        
 
-        word_list = [letter if letter in used_letters 
+        word_list = [letter if letter in used_letters
                      else '-' for letter in word]
         print(lives_visual_dict[lives])
         print('Current word: ', ' '.join(word_list))
@@ -74,7 +75,7 @@ def hangman():
                 print('')
 
             else:
-                lives = lives - 1  
+                lives = lives - 1
                 print('\nYour letter,', user_letter, 'is not in the word.')
 
         elif user_letter in used_letters:
@@ -82,7 +83,6 @@ def hangman():
 
         else:
             print('\nThat is not a valid letter.')
-            
 
     if lives == 0:
         print(lives_visual_dict[lives])
@@ -92,6 +92,7 @@ def hangman():
 
 
 def play_again():
+    """ ! """
     while True:
         choice = input("Do you want to play again? (yes/no): ").lower()
         if choice in ['yes', 'no']:
@@ -99,7 +100,9 @@ def play_again():
         else:
             print("Invalid input. Please try again.")
 
+
 def main():
+    """ ! """
     print_rules()
     while True:
         hangman()
@@ -110,4 +113,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
