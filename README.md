@@ -18,16 +18,16 @@ As a first time user, I want to cover the rules so I am aware of how many times 
 As a frequent visitor, I want to be able to challenge myself with new words to guess. 
 
 ## FEATURES
-Welcome and How to play: 
+- Welcome and How to play: 
 ![Alt text](images/features 11.png)
 The game starts by prompting you that you have 7 lives, which is exciting since you do not know what will come your way. It shows you how many letters are in the word and allows you to make your first guess
-![Alt text](<images/features 1.png>)
-There is a timer going on and it times how long it takes for the user to finish the game. There is a feature to warn the user if the letter they have picked is right/wrong and how many lives they have left. You can also see the hangman forming everytime the user gets a letter wrong. 
-![Alt text](<images/features 2.png>)
-When the user wins, there is a text telling them so. They then can choose if they want to play again or quit by answering yes or no. 
-![Alt text](<images/features 3.png>)
-The user is notified that they have no more lives left and the hangman is fully formed to support the text. They can again choose to play or quit the next round. 
-![Alt text](<images/features 4.png>)
+![Alt text](images/features 1.png)
+- There is a timer going on and it times how long it takes for the user to finish the game. There is a feature to warn the user if the letter they have picked is right/wrong and how many lives they have left. You can also see the hangman forming everytime the user gets a letter wrong. 
+![Alt text](images/features 2.png)
+- When the user wins, there is a text telling them so. They then can choose if they want to play again or quit by answering yes or no. 
+![Alt text](images/features 3.png)
+- The user is notified that they have no more lives left and the hangman is fully formed to support the text. They can again choose to play or quit the next round. 
+![Alt text](images/features 4.png)
 
 ## FLOWCHART
 The flowchart represents the logic that has been followed: 
