@@ -60,62 +60,62 @@ Python 3.8.5: used to anchor the project and direct all application behavior
 
 
 ## Deployment
-The program was deployed to Heroku.
-This project requires you to have Python installed on your local PC.
+- The program was deployed to Heroku.
+- This project requires you to have Python installed on your local PC.
 
-Create a local copy of the GitHub repository by following one of the two processes below:
+- Create a local copy of the GitHub repository by following one of the two processes below:
 
-Clone the repository:
+- Clone the repository:
 
-Open a folder on your computer with the terminal.
-Run the following command
+- Open a folder on your computer with the terminal.
+- Run the following command
 git clone https://github.com/Melisaavr/hang-man.git
-Create your own GitHub repository to host the code.
+- Create your own GitHub repository to host the code.
 
-Run the command git remote set-url origin <Your GitHub Repo Path> to set the remote repository location to your repository.
+- Run the command git remote set-url origin <Your GitHub Repo Path> to set the remote repository location to your repository.
 
-Push the files to your repository with the following command: git push
+- Push the files to your repository with the following command: git push
 
-Create a Heroku account if you don't already have one here Heroku.
+- Create a Heroku account if you don't already have one here Heroku.
 
-Create a new Heroku application on the following page here New Heroku App:
+- Create a new Heroku application on the following page here New Heroku App:
 
-Create a new Heroku application
+- Create a new Heroku application
 ![Alt text](images/heroku_1.png)
 
-Go to the Deploy tab:
+- Go to the Deploy tab:
 ![Alt text](images/heroku_2.png)
 
-Link your GitHub account and connect the application to the repository you created.
+- Link your GitHub account and connect the application to the repository you created.
 ![Alt text](images/heroku_3.png)
 
-Go to the Settings tab:
+- Go to the Settings tab:
 ![Alt text](images/heroku_4.png)
 
-Click "Add buildpack":
+- Click "Add buildpack":
 ![Alt text](images/heroku_5.png)
 
-Add the Python and Node.js buildpacks in the following order:
+- Add the Python and Node.js buildpacks in the following order:
 ![Alt text](images/heroku_6.png)
 
-Click "Reveal Config Vars."
+- Click "Reveal Config Vars."
 ![Alt text](images/heroku_7.png)
 
-Add 1 new Config Vars:
+- Add 1 new Config Vars:
 
 Key: PORT Value: 8000
 This Config was provided by CODE INSTITUTE.
 
-Go back to the Deploy tab:
+- Go back to the Deploy tab:
 ![Alt text](images/heroku_8.png)
 
-Click "Deploy Branch":
+- Click "Deploy Branch":
 ![Alt text](images/heroku_9.png)
 
-Wait for the completion of the deployment.
+- Wait for the completion of the deployment.
 ![Alt text](images/heroku_10.png)
 
-Click "Open app" to launch the application inside a web page.
+- Click "Open app" to launch the application inside a web page.
 ![Alt text](images/heroku_11.png)
 
 
@@ -129,8 +129,7 @@ Click "Open app" to launch the application inside a web page.
 | The welcome message and game rules should be displayed correctly.| Welcome message and rules displayed| Y | Y | - |
 | Testing Game Start| The game should start after pressing enter.| Y | Y | - |
 |Testing Valid Input| The game should accept valid letters and update the game state accordingly.| Y | Y | - |
-| Testing Invalid Input Handling| The game should reject non-alphabetical characters and not count them as attempts.
-| Y | Y | - |
+| Testing Invalid Input Handling| The game should reject non-alphabetical characters and not count them as attempts.| Y | Y | - |
 | Testing Repeated Letters| The game should notify the user if a letter has already been guessed and not count it as a new attempt.| Y | Y | - |
 | Testing Timer Accuracy| The elapsed time should only account for active gameplay and not include waiting periods.| Y | Y | - |
 |Testing Game Over Conditions| The game should end when the player either correctly guesses the word or runs out of lives.| Y | Y | - |
