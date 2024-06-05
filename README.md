@@ -120,8 +120,15 @@ Click "Open app" to launch the application inside a web page.
 
 
 ## Testing
-- CI PYTHON LINTER: 
+### CI PYTHON LINTER: No errors were left unresolved. 
 ![Alt text](images/python_testing.PNG)
+### Manual Testing: 
+## Manual testing
+
+| action | expected result | tested | passed | comments |
+| --- | --- | --- | --- | --- |
+| The welcome message and game rules should be displayed correctly.| Welcome message and rules displayed| Y | Y | - |
+
 
 ## Credits
 How to add a timer on Python https://www.youtube.com/watch?v=KseiSR0MCTI&ab_channel=BroCode
