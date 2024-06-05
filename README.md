@@ -123,11 +123,18 @@ Click "Open app" to launch the application inside a web page.
 ### CI PYTHON LINTER: No errors were left unresolved. 
 ![Alt text](images/python_testing.PNG)
 ### Manual Testing: 
-## Manual testing
 
 | action | expected result | tested | passed | comments |
 | --- | --- | --- | --- | --- |
 | The welcome message and game rules should be displayed correctly.| Welcome message and rules displayed| Y | Y | - |
+| Testing Game Start| The game should start after pressing enter.| Y | Y | - |
+|Testing Valid Input| The game should accept valid letters and update the game state accordingly.| Y | Y | - |
+| Testing Invalid Input Handling| The game should reject non-alphabetical characters and not count them as attempts.
+| Y | Y | - |
+| Testing Repeated Letters| The game should notify the user if a letter has already been guessed and not count it as a new attempt.| Y | Y | - |
+| Testing Timer Accuracy| The elapsed time should only account for active gameplay and not include waiting periods.| Y | Y | - |
+|Testing Game Over Conditions| The game should end when the player either correctly guesses the word or runs out of lives.| Y | Y | - |
+| Testing Play Again Functionality| The game should prompt the user to play again and restart if the user chooses to do so.| Y | Y | - |
 
 
 ## Credits
